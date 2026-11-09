@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Citas | Clínica Integral Horizonte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+<div class="page-title"><h1>Agenda tu cita</h1><p>Tus solicitudes se guardan en este navegador. No se envían a ningún servidor.</p></div>
+<section class="two">
+  <div class="card"><form class="form" id="citaForm">
+    <div class="full"><label for="cn">Nombre completo</label><input id="cn" required autocomplete="name"></div>
+    <div><label for="cs">Servicio</label><select id="cs"><option>Medicina general</option><option>Pediatría</option><option>Laboratorio</option></select></div>
+    <div><label for="cf">Fecha</label><input id="cf" type="date" required></div>
+    <div><label for="ch">Hora</label><select id="ch"><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>16:00</option><option>17:00</option><option>18:00</option></select></div>
+    <div class="full"><button class="btn" type="submit">Solicitar cita</button></div>
+  </form><div id="msg" class="msg hidden" role="status"></div></div>
+  <div class="card"><h3>Mis citas solicitadas</h3>
+    <table><thead><tr><th>Nombre</th><th>Servicio</th><th>Fecha</th><th></th></tr></thead><tbody id="lista"></tbody></table></div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/layout.js"></script>
+<script src="js/citas.js"></script>
+</body>
+</html>
